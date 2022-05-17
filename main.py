@@ -28,11 +28,11 @@ def showimage():
 def Hide():
     global secret
     message=text1.get(1.0, END)
-    secret = lbl.hide(str(filename), message)
+    secret = lsb.hide(str(filename), message)
 
 
 def Show():
-    clear_message=lbl.reveal(filename)
+    clear_message=lsb.reveal(filename)
     text1.delete(1.0, END)
     text1.insert(END, clear_message)
 def save():
